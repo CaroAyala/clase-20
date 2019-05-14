@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(22, 22, 22);
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+a:link {
+  font-family: "Slabo 27px", serif;
+  color: #ff4800ee;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+a:visited {
+  color: #ff4800ee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  width: 50%;
+  margin: 30px;
+}
+
+h2 {
+  font-family: "Slabo 27px", serif;
+  color: #ff4800ee;
+}
+
+p {
+  margin-top: 5px;
+  color: gray;
+  font-size: 14px;
+  font-family: "Slabo 27px", serif;
+}
+.que-somos {
+  background-color: rgb(221, 216, 216);
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.texto {
+  margin: 0 230px;
+}
+.logo2 {
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo2 img {
+  width: 100%;
+  height: auto;
+}
+.linkedin-github {
+  height: 30px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-linkedin {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.logo-linkedin img {
+  width: 100%;
+  height: auto;
+}
+.logo-github {
+  width: 30px;
+  height: 30px;
+}
+.logo-github img {
+  width: 100%;
+  height: auto;
+}
+.staff {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.perfil {
+  width: 100px;
+  height: 100px;
+}
+.perfil img {
+  width: 100%;
+  height: auto;
+}
+.nombres p {
+  color: #ff4800ee;
+  font-size: 10px;
+  font-family: "Slabo 27px", serif;
+  text-align: center;
+}
+footer {
+  background-color: rgb(22, 22, 22);
+  height: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacto {
+  display: flex;
+}
+.sobre {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+.sobre img {
+  width: 100%;
+  height: auto;
+}
+.mail {
+  color: #ff4800ee;
+  font-size: 10px;
+  font-family: "Slabo 27px", serif;
+}
+.redes {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.redes img {
+  margin-right: 10px;
+  width: 100%;
+  height: auto;
+}
