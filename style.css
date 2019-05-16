@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* BARRA DE NAVEGACION */
 nav {
   background-color: rgb(22, 22, 22);
   height: 50px;
@@ -42,22 +42,29 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+nav .fa-bars {
+  display: none;
+}
 
-.banner {
+/* IMAGEN */
+header {
   display: flex;
   justify-content: center;
+  margin: 30px 0;
 }
-
+.banner {
+  width: 600px;
+  height: 210px;
+}
 .banner img {
-  width: 50%;
-  margin: 30px;
+  width: 100%;
+  height: 210px;
 }
-
+/* QUE SOMOS */
 h2 {
   font-family: "Slabo 27px", serif;
   color: #ff4800ee;
 }
-
 p {
   margin-top: 5px;
   color: gray;
@@ -73,15 +80,14 @@ p {
   align-items: center;
 }
 .texto {
-  margin: 0 230px;
+  width: 510px;
+  height: 85px;
 }
 .logo2 {
   margin-left: 20px;
-  margin-top: 50px;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
-
 .logo2 img {
   width: 100%;
   height: auto;
@@ -92,29 +98,13 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.logo-linkedin {
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-}
 
-.logo-linkedin img {
-  width: 100%;
-  height: auto;
-}
-.logo-github {
-  width: 30px;
-  height: 30px;
-}
-.logo-github img {
-  width: 100%;
-  height: auto;
-}
+/* STAFF */
 .staff {
   margin-top: 20px;
   margin-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -122,51 +112,128 @@ p {
 .perfil {
   width: 100px;
   height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nombre-mobile {
+  display: none;
+  position: relative;
+  margin-bottom: -10px;
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  font-family: "Slabo 27px", serif;
+  background-color: rgb(224, 212, 212);
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.cargo-mobile {
+  display: none;
+  position: relative;
+  margin-top: -10px;
+  color: black;
+  padding: 5px;
+  font-size: 10px;
+  font-family: "Slabo 27px", serif;
+  background-color:  rgb(224, 212, 212);
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
 }
 .perfil img {
   width: 100%;
   height: auto;
 }
+
 .nombres p {
   color: #ff4800ee;
+  margin: 0;
   font-size: 10px;
   font-family: "Slabo 27px", serif;
   text-align: center;
 }
+
 footer {
   background-color: rgb(22, 22, 22);
+  margin-top: 30px;
   height: 20px;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .contacto {
+  margin: 10px;
   display: flex;
 }
-.sobre {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-}
-.sobre img {
-  width: 100%;
-  height: auto;
+.fa-envelope {
+  margin-right: 5px;
+  color: #ff4800ee;
 }
 .mail {
   color: #ff4800ee;
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Slabo 27px", serif;
 }
-.redes {
-  width: 20px;
-  height: 20px;
-  display: flex;
+.linkedin-github i {
+  font-size: 30px;
 }
 
-.redes img {
-  margin-right: 10px;
-  width: 100%;
-  height: auto;
-}
+/* mobile */
+
+@media (max-width: 600px) {
+  
+  nav .fa-bars {
+    display: inline-block;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+  .que-somos {
+    margin: 0;
+    width: 100%;
+  }  
+  .texto {
+    margin-left: 15px;
+  }
+  .nombres p {
+    display: none;
+  }
+  .nombre-mobile {
+    display: block;
+  }
+  .cargo-mobile {
+    display: block;
+  }
+  .linkedin-github {
+    display: none;
+  }
+  .logo2 {
+    display: none;
+  }
+  .staff {
+    height: 400px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contacto {
+    margin: 5px 0;
+  }
